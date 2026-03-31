@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# fpga-claude runtime
+~/.fpga-claude/
+
+# Vivado generated files
+*.jou
+*.log
+*.str
+
+# Captured waveforms (users may want to gitignore these)
+capture.csv
+captures/
+
+# Vivado temp
+.Xil/
+webtalk*/
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fpga-claude"
+version = "0.1.0"
+description = "Claude Code integration for Vivado FPGA debugging"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "click>=8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6.0",
+]
+
+[project.scripts]
+fpga-claude = "fpga_claude.cli:cli"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["fpga_claude*"]
+
+[tool.setuptools.package-data]
+fpga_claude = ["../tcl/*.tcl"]
