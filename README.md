@@ -133,7 +133,9 @@ Then edit the project context section in `capture.md` so Claude knows your signa
 
 The demo above uses an ILA core connected to the MM2S channel of an AXI VDMA in an HDMI overlay pipeline on an Arty Z7-20:
 
-<img src="docs/assets/ila-mm2s.png" width="60%">
+<p align="left">
+  <img src="docs/assets/ila-mm2s.png" width="60%" alt="ILA connected to MM2S signals">
+</p>
 
 ## Contributing
 
