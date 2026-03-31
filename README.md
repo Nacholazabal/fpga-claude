@@ -1,5 +1,7 @@
 ﻿# fpga-claude
 
+![fpga-claude banner](docs/assets/fpga-claude-banner.png)
+
 [![CI](https://github.com/Nacholazabal/fpga-claude/actions/workflows/ci.yml/badge.svg)](https://github.com/Nacholazabal/fpga-claude/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -12,13 +14,11 @@ Capture Vivado ILA waveforms from your terminal and let Claude analyze them in s
 
 ## Demo
 
-TODO: add demo GIF here
+![MM2S capture demo](docs/assets/demo.gif)
 
-Suggested path once recorded:
+### ILA setup used in the demo
 
-```text
-docs/demo.gif
-```
+![ILA connected to MM2S signals](docs/assets/ila-mm2s.png)
 
 ## How It Works
 
@@ -70,6 +70,12 @@ fpga-claude connect
 5. Capture waveform:
 ```bash
 fpga-claude capture --project /path/to/project.xpr
+```
+
+If your shell says `fpga-claude: command not found`, use module mode:
+
+```bash
+python -m fpga_claude capture --project /path/to/project.xpr
 ```
 
 If auto-detection fails:

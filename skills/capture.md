@@ -8,10 +8,14 @@ Capture an ILA waveform from the FPGA and analyze the results.
 
 1. Run the capture command:
    ```bash
-   fpga-claude capture --project $ARGUMENTS --trigger immediate
+   python -m fpga_claude capture --project $ARGUMENTS --trigger immediate
    ```
    If no argument is provided, use `--project .` to search the current directory for a `.xpr` file.
    If the user specifies a trigger condition or ILA name, add `--ila <name>` or `--trigger basic`.
+   If `python -m fpga_claude` fails because the module is missing, fall back to:
+   ```bash
+   fpga-claude capture --project $ARGUMENTS --trigger immediate
+   ```
 
 2. Check for errors. Common issues and how to guide the user:
    - "hw_server not reachable" → board not connected or hw_server not started; tell user to connect board and open Hardware Manager in Vivado (or run `hw_server.exe` from Vivado bin dir)
