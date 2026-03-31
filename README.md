@@ -1,6 +1,6 @@
 ﻿# fpga-claude
 
-![fpga-claude banner](docs/assets/fpga-claude-banner.png)
+![fpga-claude banner](docs/assets/repo-banner.png)
 
 [![CI](https://github.com/Nacholazabal/fpga-claude/actions/workflows/ci.yml/badge.svg)](https://github.com/Nacholazabal/fpga-claude/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/downloads/)
